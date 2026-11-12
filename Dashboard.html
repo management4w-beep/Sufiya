@@ -2195,7 +2195,7 @@ table.settlement-sign td b{ display:block; margin-bottom:6px; font-size:13px; }
   $('mzc-refresh').onclick = function(){ S.view === 'folder' ? refreshFolder(true) : showHome(false); };
   $('mzc-pdf').onclick = exportPdf;
   // 🆕 رابط الكتالوج التفاعلي للزبون (catalog.html - صفحة عامة بدون تسجيل دخول، بتقرأ من درايف عبر السيرفر)
-  var PUBLIC_CATALOG_URL = 'https://management4w-beep.github.io/sufiya/catalog.html';
+  var PUBLIC_CATALOG_URL = 'https://management4w-beep.github.io/Sufiya/catalog.html';
   // 🆕 اختيار الفرع قبل المشاركة: رقم واتساب الاستفسارات بصفحة الزبون بيكون رقم هالفرع (?b=sy / ?b=ae)
   function lsGet(k, d){ try{ return localStorage.getItem(k) || d; }catch(e){ return d; } }
   function lsSet(k, v){ try{ localStorage.setItem(k, v); }catch(e){} }
@@ -2515,7 +2515,7 @@ table.settlement-sign td b{ display:block; margin-bottom:6px; font-size:13px; }
       <div id="quotationLoading">⏳ عم يتحمّل عرض السعر...</div>
       <div id="quotationFailMsg" style="display:none;text-align:center;padding:40px 20px;color:var(--muted);font-size:13px;">
         <span class="mz-fm">تعذّر تحميل أداة عرض السعر جوّا الصفحة.</span><br>
-        <a href="https://management4w-beep.github.io/sufiya/" target="_blank" style="color:var(--aux1);">اضغط هون لفتحها بنافذة مستقلة ↗</a>
+        <a href="https://management4w-beep.github.io/Sufiya/" target="_blank" style="color:var(--aux1);">اضغط هون لفتحها بنافذة مستقلة ↗</a>
       </div>
       <iframe id="quotationFrame" src="" style="display:none;" title="عرض سعر جديد"></iframe>
     </div>
@@ -2529,7 +2529,7 @@ table.settlement-sign td b{ display:block; margin-bottom:6px; font-size:13px; }
       <div id="designerLoading">⏳ عم يتحمّل (تصميم/Sketch)...</div>
       <div id="designerFailMsg" style="display:none;text-align:center;padding:40px 20px;color:var(--muted);font-size:13px;">
         <span class="mz-fm">تعذّر تحميل أداة المصمم جوّا الصفحة.</span><br>
-        <a href="https://management4w-beep.github.io/sufiya/designer.html" target="_blank" style="color:var(--aux1);">اضغط هون لفتحها بنافذة مستقلة ↗</a>
+        <a href="https://management4w-beep.github.io/Sufiya/designer.html" target="_blank" style="color:var(--aux1);">اضغط هون لفتحها بنافذة مستقلة ↗</a>
       </div>
       <iframe id="designerFrame" src="" style="display:none;" title="(تصميم/Sketch)"></iframe>
     </div>
@@ -2541,7 +2541,7 @@ table.settlement-sign td b{ display:block; margin-bottom:6px; font-size:13px; }
       <div id="accountingLoading">⏳ عم يتحمّل النظام المحاسبي...</div>
       <div id="accountingFailMsg" style="display:none;text-align:center;padding:40px 20px;color:var(--muted);font-size:13px;">
         <span class="mz-fm">تعذّر تحميل المحاسبة جوّا الصفحة.</span><br>
-        <a href="https://management4w-beep.github.io/sufiya/accounting.html" target="_blank" style="color:var(--aux1);">اضغط هون لفتحها بنافذة مستقلة ↗</a>
+        <a href="https://management4w-beep.github.io/Sufiya/accounting.html" target="_blank" style="color:var(--aux1);">اضغط هون لفتحها بنافذة مستقلة ↗</a>
       </div>
       <iframe id="accountingFrame" src="" style="display:none;" title="المحاسبة"></iframe>
     </div>
@@ -2554,7 +2554,7 @@ table.settlement-sign td b{ display:block; margin-bottom:6px; font-size:13px; }
       <div id="procurementLoading">⏳ عم تتحمّل أداة المشتريات...</div>
       <div id="procurementFailMsg" style="display:none;text-align:center;padding:40px 20px;color:var(--muted);font-size:13px;">
         <span class="mz-fm">تعذّر تحميل أداة المشتريات جوّا الصفحة.</span><br>
-        <a href="https://management4w-beep.github.io/sufiya/procurement.html" target="_blank" style="color:var(--aux1);">اضغط هون لفتحها بنافذة مستقلة ↗</a>
+        <a href="https://management4w-beep.github.io/Sufiya/procurement.html" target="_blank" style="color:var(--aux1);">اضغط هون لفتحها بنافذة مستقلة ↗</a>
       </div>
       <iframe id="procurementFrame" src="" style="display:none;" title="المشتريات"></iframe>
     </div>
@@ -3416,7 +3416,7 @@ function showDraftsDesignsView(){
 }
 // عرض السعر (رسّام النوافذ والأبواب) - أداة مستقلة محمّلة داخل نفس الصفحة (iframe)
 // بيتحمّل أول مرة بس (lazy load) لتسريع فتح الداشبورد
-const QUOTATION_TOOL_URL = 'https://management4w-beep.github.io/sufiya/';
+const QUOTATION_TOOL_URL = 'https://management4w-beep.github.io/Sufiya/';
 // 🔧 2026-11-10: كانت رسالة "تعذّر تحميل..." تطلع بعد 10-12 ثانية حتى لو الأداة لسا عم تتحمّل (نت بطيء)،
 // وبعدين الأداة تفتح لحالها. هلق بعد المهلة منكتب إنها عم تاخد وقت (وبيضل مؤشر التحميل)، و"تعذّر" بس لخطأ حقيقي.
 function mzFrameMsg(el, failed){
@@ -3469,7 +3469,7 @@ function showQuotationView(){
 // مصمم النوافذ والأبواب - نفس نمط عرض السعر تماماً (iframe محمّل مرة وحدة، lazy load) - أداة مستقلة
 // (designer.html) بس بتعيد استخدام نفس محرك الرسم يلي جوا عرض السعر، وحفظها لجوجل درايف مستقل عن
 // عرض السعر تمامًا (شوف الملاحظات جوا designer.html نفسها).
-const DESIGNER_TOOL_URL = 'https://management4w-beep.github.io/sufiya/designer.html';
+const DESIGNER_TOOL_URL = 'https://management4w-beep.github.io/Sufiya/designer.html';
 function showDesignerView(){
   hideAllViews();
   const view = document.getElementById('designerView');
@@ -3509,7 +3509,7 @@ function showDesignerView(){
 }
 
 // المشتريات - نفس نمط عرض السعر تماماً (iframe محمّل مرة وحدة، lazy load)
-const ACCOUNTING_TOOL_URL = 'https://management4w-beep.github.io/sufiya/accounting.html';
+const ACCOUNTING_TOOL_URL = 'https://management4w-beep.github.io/Sufiya/accounting.html';
 function showAccountingView(){
   hideAllViews();
   const view = document.getElementById('accountingView'), frame = document.getElementById('accountingFrame');
@@ -3525,7 +3525,7 @@ function showAccountingView(){
     frame.setAttribute('data-loaded', '1');
   }
 }
-const PROCUREMENT_TOOL_URL = 'https://management4w-beep.github.io/sufiya/procurement.html';
+const PROCUREMENT_TOOL_URL = 'https://management4w-beep.github.io/Sufiya/procurement.html';
 function showProcurementView(){
   hideAllViews();
   const view = document.getElementById('procurementView');
@@ -4291,7 +4291,7 @@ document.getElementById('payrollEmpSaveBtn').addEventListener('click', ()=>{
 /* ---------- صفحة الموظف الشخصية (رابط عام بدون تسجيل دخول - رواتب/مستحقات) ---------- */
 // نفس فكرة رابط توقيع العقود فوق (SIGN_BASE_URL) - رابط ثابت لصفحة عامة على GitHub Pages
 // (salary.html) بترجع بيانات الموظف من السيرفر حسب viewToken المخزّن جوا سجله.
-const SALARY_BASE_URL = 'https://management4w-beep.github.io/sufiya/salary.html';
+const SALARY_BASE_URL = 'https://management4w-beep.github.io/Sufiya/salary.html';
 const PAYROLL_SEND_LINK_URL = 'https://merzona-server-production.up.railway.app/t/sufiya/payroll/send-link';
 
 // نفس منطق تطبيع رقم الهاتف المستخدم بـtoWaLink فوق، بس هون بترجع الأرقام فقط (بدون رابط wa.me)
@@ -8406,7 +8406,7 @@ async function renameQuotationTitleToAgreement(token, ref){
 
 // نفس رابط صفحة التوقيع (sign.html) المستعملة بأداة عروض الأسعار الأساسية - لازم يبقى نفس الرابط
 // بالضبط بالأداتين، وإلا أي رابط سبق وانبعت للزبون بينكسر.
-const SIGN_BASE_URL = 'https://management4w-beep.github.io/sufiya/sign.html';
+const SIGN_BASE_URL = 'https://management4w-beep.github.io/Sufiya/sign.html';
 function generateSignTokenDash(){
   const arr = new Uint8Array(16);
   (window.crypto || window.msCrypto).getRandomValues(arr);

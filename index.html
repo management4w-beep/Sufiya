@@ -610,7 +610,7 @@ window.MZ_TENANT='sufiya';}catch(e){}})();</script><script>window.MZ_COMPANY_BOO
 </script>
 <!-- ===== MERZONA ACCESS GATE - END ===== -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>M-Q-260</title>
+<title>S-Q-260</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -5153,7 +5153,7 @@ function buildBakedHtmlSnapshot(){
   document.body.setAttribute('data-prefilled', '1');
 
   let html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
-  html = html.split('url(fonts/').join('url(https://management4w-beep.github.io/sufiya/fonts/'); // 🔧 2026-11-10: النسخة المحفوظة بتنفتح من برّا الموقع، فخط Tajawal لازم برابط كامل
+  html = html.split('url(fonts/').join('url(https://management4w-beep.github.io/Sufiya/fonts/'); // 🔧 2026-11-10: النسخة المحفوظة بتنفتح من برّا الموقع، فخط Tajawal لازم برابط كامل
   // 🛠️ 2026-10-04.9: دوال بديلة (مش نص) حتى الرموز الخاصة بأسماء البنود ما تتفسّر، وتهريب علامة "<" حتى وسم إغلاق السكربت ما يكسر الملف.
   const __safeBakeJson = v => JSON.stringify(v).replace(/</g, '\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');
   html = html.replace(/const ITEMS_DEFAULT = \[.*\];/, () => 'const ITEMS_DEFAULT = ' + __safeBakeJson(ITEMS) + ';');
@@ -5657,7 +5657,7 @@ const WHATSAPP_HEALTH_URL = WHATSAPP_NOTIFY_URL.replace(/\/send-quotation\/?$/, 
    (بدون تسجيل دخول - الزبون مش موظف عنده حساب جوجل مربوط بالأداة). الرمز نفسه ("signToken")
    بيتولّد مرة وحدة بس لكل رقم مرجعي ومنخزنه محليًا + جوا ملف بيانات العرض (-data.json) عالدرايف،
    حتى لو انفتح نفس العرض من جهاز/متصفح تاني بعدين، يضل نفس رابط التوقيع يلي صار مبعوت للزبون شغال. */
-const SIGN_BASE_URL = 'https://management4w-beep.github.io/sufiya/sign.html';
+const SIGN_BASE_URL = 'https://management4w-beep.github.io/Sufiya/sign.html';
 // 🆕 2026-08-27 (شكل رابط أنضف للزبون) - حمدي طلب إنو رابط التوقيع يلي بينبعت/ينفتح للزبون ما يبين
 // فيه "sign.html" ولا "ref=/t=" تقنية واضحة، وكمان يحمل رقم عرض السعر واسم الزبون بشكل مقروء، وبآخره
 // إشارة إنو هيك رابط لتوقيع عقد. الحل: منولّد الرابط بشكل "مسار" (path) تحت نفس دومين GitHub الحالي
@@ -5666,7 +5666,7 @@ const SIGN_BASE_URL = 'https://management4w-beep.github.io/sufiya/sign.html';
 // حقيقي - و404.html هالجديد بيقرأ رقم العرض والرمز السري من الرابط وبيعرض بداخله صفحة sign.html
 // الحقيقية جوا iframe بدون ما يتغيّر شكل الرابط بالمتصفح. يعني sign.html وserver.js ما تلمسوا إطلاقًا،
 // بس أضفنا نقطة دخول جديدة "أشيك شكلاً" فوقهم.
-const SIGN_PRETTY_BASE_URL = 'https://management4w-beep.github.io/sufiya/توقيع-العقد/';
+const SIGN_PRETTY_BASE_URL = 'https://management4w-beep.github.io/Sufiya/توقيع-العقد/';
 const SIGN_TOKENS_KEY = 'merzona_sign_tokens_v1';
 function loadSignTokens(){ try{ return JSON.parse(localStorage.getItem(SIGN_TOKENS_KEY) || '{}'); }catch(e){ return {}; } }
 function saveSignTokens(obj){ try{ localStorage.setItem(SIGN_TOKENS_KEY, JSON.stringify(obj)); }catch(e){} }
@@ -22870,7 +22870,7 @@ window.onShowerSideWidthChange = onShowerSideWidthChange;
   $('mzc-refresh').onclick = function(){ S.view === 'folder' ? refreshFolder(true) : showHome(false); };
   $('mzc-pdf').onclick = exportPdf;
   // 🆕 رابط الكتالوج التفاعلي للزبون (catalog.html - صفحة عامة بدون تسجيل دخول، بتقرأ من درايف عبر السيرفر)
-  var PUBLIC_CATALOG_URL = 'https://management4w-beep.github.io/sufiya/catalog.html';
+  var PUBLIC_CATALOG_URL = 'https://management4w-beep.github.io/Sufiya/catalog.html';
   // 🆕 اختيار الفرع قبل المشاركة: رقم واتساب الاستفسارات بصفحة الزبون بيكون رقم هالفرع (?b=sy / ?b=ae)
   function lsGet(k, d){ try{ return localStorage.getItem(k) || d; }catch(e){ return d; } }
   function lsSet(k, v){ try{ localStorage.setItem(k, v); }catch(e){} }
