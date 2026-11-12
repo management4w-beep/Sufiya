@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<script>/* sufiya storage */(function(){try{var P='sufiya:',S=Storage.prototype,g=S.getItem,s=S.setItem,r=S.removeItem,k=S.key,L=Object.getOwnPropertyDescriptor(S,'length').get;
+function own(t){var a=[],n=L.call(t);for(var i=0;i<n;i++){var x=k.call(t,i);if(x&&x.indexOf(P)===0)a.push(x.slice(P.length));}return a;}
+S.getItem=function(x){return g.call(this,P+x)};S.setItem=function(x,v){return s.call(this,P+x,v)};S.removeItem=function(x){return r.call(this,P+x)};
+S.key=function(i){var a=own(this);return i>=0&&i<a.length?a[i]:null};S.clear=function(){var t=this;own(t).forEach(function(x){r.call(t,P+x)})};
+Object.defineProperty(S,'length',{configurable:true,get:function(){return own(this).length}});
+if(window.IDBFactory){var F=IDBFactory.prototype,o=F.open,d=F.deleteDatabase;F.open=function(n,v){return v===undefined?o.call(this,P+n):o.call(this,P+n,v)};F.deleteDatabase=function(n){return d.call(this,P+n)};}
+window.MZ_TENANT='sufiya';}catch(e){}})();</script><script>window.MZ_COMPANY_BOOT={"nameEn": "Sufiya Glass", "nameAr": "صوفية", "fullNameEn": "Sufiya Glass", "taglineEn": "Art in its purest form of Glass", "email": "sufiya.art79@gmail.com", "website": "", "phone": "+963116625999", "cities": "دمشق", "logo": "img/company-logo.png", "colors": {"accent": "#14aacc", "text": "#1d3856"}, "branches": {"uae": {"enabled": false}, "syria": {"enabled": true, "refPrefix": "S", "labelEn": "Damascus, Syria", "labelAr": "دمشق، سوريا", "flag": "🇸🇾", "addressHtml": "Damascus, Syria &nbsp; Tel: +963116625999 &nbsp; e: sufiya.art79@gmail.com", "hasVat": false, "trn": "", "jurisdictionEn": "Damascus courts shall have exclusive jurisdiction over any dispute arising from this contract.", "jurisdictionAr": "الاختصاص القضائي لحل أي نزاع ناتج عن هذا العقد ينعقد لمحاكم مدينة دمشق.", "bank": null}}};</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>صوفية - المصمم</title>
+<!-- designer.html صار مجرد تحويل لأداة عرض السعر (index.html): المصمم الوحيد المعتمد هو اللي جوا عرض السعر،
+     ومرتبط بسجل _Designs ودرايف. هاد الملف بس عشان الروابط/المفضلات القديمة ما تنكسر، ومافي فيه أي منطق تصميم. -->
+<meta http-equiv="refresh" content="2;url=index.html">
+<style>body{font-family:system-ui,Tahoma,sans-serif;background:#f4f5f7;color:#1c1c1c;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0}.c{background:#fff;border-radius:12px;padding:28px 32px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,.08)}a{color:#0a5f93;font-weight:600}</style>
+</head>
+<body>
+<div class="c">
+  <p>المصمم صار جوا أداة عرض السعر (زر «🎨 حفظ التصميم» / «المصمم»).</p>
+  <p>عم نحوّلك…<br><a id="go" href="index.html">اضغط هون إذا ما تحوّلت</a></p>
+</div>
+<script>
+  try { var t = 'index.html' + location.search + location.hash; document.getElementById('go').href = t; location.replace(t); } catch (e) {}
+</script>
+</body>
+</html>
