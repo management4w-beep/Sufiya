@@ -10,6 +10,7 @@ Object.defineProperty(S,'length',{configurable:true,get:function(){return own(th
 if(window.IDBFactory){var F=IDBFactory.prototype,o=F.open,d=F.deleteDatabase;F.open=function(n,v){return v===undefined?o.call(this,P+n):o.call(this,P+n,v)};F.deleteDatabase=function(n){return d.call(this,P+n)};}
 window.MZ_TENANT='sufiya';}catch(e){}})();</script><script>window.MZ_COMPANY_BOOT={"nameEn": "Sufiya Glass", "nameAr": "صوفيه", "fullNameEn": "Sufiya Glass", "taglineEn": "Art in its purest form of Glass", "email": "sufiya.art79@gmail.com", "website": "", "phone": "+963116625999", "cities": "دمشق", "logo": "img/company-logo.png", "colors": {"accent": "#14aacc", "text": "#1d3856"}, "branches": {"uae": {"enabled": false}, "syria": {"enabled": true, "refPrefix": "S", "labelEn": "Damascus, Syria", "labelAr": "دمشق، سوريا", "flag": "🇸🇾", "addressHtml": "Damascus, Syria &nbsp; Tel: +963116625999 &nbsp; e: sufiya.art79@gmail.com", "hasVat": false, "trn": "", "jurisdictionEn": "Damascus courts shall have exclusive jurisdiction over any dispute arising from this contract.", "jurisdictionAr": "الاختصاص القضائي لحل أي نزاع ناتج عن هذا العقد ينعقد لمحاكم مدينة دمشق.", "bank": null}}};</script>
 <script src="company.js?v=2026-11-13.1"></script><!-- 🏢 إعدادات الشركة -->
+<script src="mz-i18n.js?v=2026-11-14.2"></script><script src="i18n-en-acct.js?v=2026-11-14.1"></script><script src="i18n-en-dash.js?v=2026-11-14.1"></script><script src="i18n-en-proc.js?v=2026-11-14.1"></script><!-- 🌐 اللغة (عربي/English) -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="only light">
 <meta name="supported-color-schemes" content="light">
@@ -158,7 +159,7 @@ window.MZ_TENANT='sufiya';}catch(e){}})();</script><script>window.MZ_COMPANY_BOO
   // ===== فحص تلقائي لآخر نسخة منشورة (يحل مشكلة "المتصفح عم يعرض نسخة قديمة مخزنة") =====
   // 🔔 لازم تتحدث CURRENT_VERSION هون كل مرة يصير فيها تعديل جديد على هاد الملف، بنفس الوقت يلي
   // بينحدث فيه رقم النسخة تبع "procurement" جوا ملف version.json (لازم يترفع مع كل تحديث كمان).
-  var CURRENT_VERSION = '2026-11-11.1';
+  var CURRENT_VERSION = '2026-11-14.1';
   window.__mzVersion = CURRENT_VERSION;
   var TOOL_KEY = 'procurement';
   var VERSION_URL = 'version.json';
@@ -291,6 +292,7 @@ window.MZ_TENANT='sufiya';}catch(e){}})();</script><script>window.MZ_COMPANY_BOO
       }).then(function(r){
         if(r && r.token){
           setSessionToken(r.token, r.username);
+          try{ if(window.MZ_I18N) MZ_I18N.applyUser(r.lang); }catch(_){}
           proceedIfPermitted(r.permissions);
         } else {
           btn.disabled = false; btn.textContent = 'إنشاء الحساب';
@@ -332,6 +334,7 @@ window.MZ_TENANT='sufiya';}catch(e){}})();</script><script>window.MZ_COMPANY_BOO
       }).then(function(r){
         if(r && r.token){
           setSessionToken(r.token, r.username);
+          try{ if(window.MZ_I18N) MZ_I18N.applyUser(r.lang); }catch(_){}
           proceedIfPermitted(r.permissions);
         } else {
           btn.disabled = false; btn.textContent = 'دخول';
@@ -358,7 +361,7 @@ window.MZ_TENANT='sufiya';}catch(e){}})();</script><script>window.MZ_COMPANY_BOO
         var token = getSessionToken();
         if(!token){ showLoginForm(deviceToken, r.username); return; }
         apiUsers('/users/me?token=' + encodeURIComponent(token)).then(function(me){
-          if(me && me.permissions){ proceedIfPermitted(me.permissions); }
+          if(me && me.permissions){ try{ if(window.MZ_I18N) MZ_I18N.applyUser(me.lang); }catch(_){} proceedIfPermitted(me.permissions); }
           else { showLoginForm(deviceToken, r.username); }
         }).catch(function(){ showLoginForm(deviceToken, r.username); });
       } else if(r && r.hasAccount === false){
