@@ -208,11 +208,13 @@ window.MZ_TENANT='sufiya';}catch(e){}})();</script><script>window.MZ_COMPANY_BOO
     margin:0 0 4px;
   }
 </style>
+<link rel="icon" type="image/png" href="img/sufiya-icon.png">
+<link rel="apple-touch-icon" href="img/sufiya-icon.png">
 </head>
 <body>
 <div class="card">
   <div class="brand">
-    <h1>Merzona</h1>
+    <h1>Sufiya Glass</h1>
     <p>توقيع إلكتروني للعقد &nbsp;|&nbsp; Electronic Contract Signing</p>
   </div>
 
@@ -282,12 +284,12 @@ window.MZ_TENANT='sufiya';}catch(e){}})();</script><script>window.MZ_COMPANY_BOO
       <div class="ok-icon">✅</div>
       <h2 class="state-title">تم التوقيع بنجاح</h2>
       <p class="state-sub">Signed successfully</p>
-      <p style="font-size:13px;color:var(--muted);">تم حفظ نسخة موقّعة من العقد وإرسالها لفريق Merzona.<br>A signed copy has been saved and sent to the Merzona team.</p>
+      <p style="font-size:13px;color:var(--muted);">تم حفظ نسخة موقّعة من العقد وإرسالها لفريق Sufiya Glass.<br>A signed copy has been saved and sent to the Sufiya Glass team.</p>
       <a class="secondary-btn" id="success-download-btn" href="#" target="_blank" rel="noopener">⬇️ تحميل نسخة العقد الموقّع<br><span style="font-size:11px;font-weight:400;">Download the signed contract</span></a>
     </div>
   </div>
 
-  <div class="fine-print">Merzona for Aluminum &amp; Glass Works</div>
+  <div class="fine-print">Sufiya Glass</div>
 </div>
 
 <script>
@@ -367,13 +369,13 @@ function handleApiError(status, err){
   if(status === 404 || err === 'not-found'){
     showError('ما لقينا عرض السعر', 'Quotation not found', 'يمكن الرابط قديم أو غير صحيح - تأكد من فتح آخر نسخة من العرض المرسل إليك.');
   } else if(status === 401 || err === 'invalid-token'){
-    showError('رابط التوقيع غير صالح', 'Invalid signing link', 'هالرابط مش مطابق لهالعرض - تواصل مع Merzona للحصول على رابط صحيح.');
+    showError('رابط التوقيع غير صالح', 'Invalid signing link', 'هالرابط مش مطابق لهالعرض - تواصل مع Sufiya Glass للحصول على رابط صحيح.');
   } else if(status === 503 || err === 'not-linked-yet'){
-    showError('الخدمة غير متاحة مؤقتًا', 'Service temporarily unavailable', 'حاول بعد شوي، أو تواصل مع Merzona.');
+    showError('الخدمة غير متاحة مؤقتًا', 'Service temporarily unavailable', 'حاول بعد شوي، أو تواصل مع Sufiya Glass.');
   } else if(err === 'quotation-pdf-missing'){
-    showError('نسخة العرض الأصلية ناقصة', 'Original quotation file missing', 'تواصل مع Merzona لإعادة إرسال العرض.');
+    showError('نسخة العرض الأصلية ناقصة', 'Original quotation file missing', 'تواصل مع Sufiya Glass لإعادة إرسال العرض.');
   } else {
-    showError('صار خطأ غير متوقع', 'Unexpected error', 'حاول تاني بعد شوي، أو تواصل مع Merzona إذا استمرت المشكلة.');
+    showError('صار خطأ غير متوقع', 'Unexpected error', 'حاول تاني بعد شوي، أو تواصل مع Sufiya Glass إذا استمرت المشكلة.');
   }
 }
 
@@ -491,7 +493,7 @@ function handleSubmitError(status, err){
   const errEl = document.getElementById('submit-error');
   let msg = 'صار خطأ غير متوقع - حاول تاني. Unexpected error - please try again.';
   if(status === 401 || err === 'invalid-token') msg = 'رابط التوقيع غير صالح. Invalid signing link.';
-  else if(err === 'quotation-pdf-missing') msg = 'نسخة العرض الأصلية ناقصة - تواصل مع Merzona. Original quotation file missing - contact Merzona.';
+  else if(err === 'quotation-pdf-missing') msg = 'نسخة العرض الأصلية ناقصة - تواصل مع Sufiya Glass. Original quotation file missing - contact Sufiya Glass.';
   else if(status === 429 || err === 'rate-limit') msg = 'محاولات كتيرة بوقت قصير - جرب بعد شوي. Too many attempts - try again shortly.';
   errEl.textContent = msg;
   errEl.style.display = 'block';

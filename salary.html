@@ -181,11 +181,13 @@ window.MZ_TENANT='sufiya';}catch(e){}})();</script><script>window.MZ_COMPANY_BOO
     color:var(--ink);
   }
 </style>
+<link rel="icon" type="image/png" href="img/sufiya-icon.png">
+<link rel="apple-touch-icon" href="img/sufiya-icon.png">
 </head>
 <body>
 <div class="card">
   <div class="brand">
-    <h1>Merzona</h1>
+    <h1>Sufiya Glass</h1>
     <p>صفحتي - الرواتب والمستحقات &nbsp;|&nbsp; My salary page</p>
   </div>
 
@@ -239,7 +241,7 @@ window.MZ_TENANT='sufiya';}catch(e){}})();</script><script>window.MZ_COMPANY_BOO
     <p class="refresh-note">هاي الصفحة بتتحدّث أول ما تفتحها من جديد - إذا لسا ما شفت آخر تحديث، أعد تحميل الصفحة.</p>
   </div>
 
-  <div class="fine-print">Merzona for Aluminum &amp; Glass Works</div>
+  <div class="fine-print">Sufiya Glass</div>
 </div>
 
 <script>
@@ -293,15 +295,15 @@ async function fetchWithTimeout(url, options, timeoutMs){
 
 function handleApiError(status, err){
   if(status === 404 || err === 'not-found'){
-    showError('ما لقينا صفحتك', 'يمكن الرابط قديم - تواصل مع Merzona للحصول على رابط محدّث.');
+    showError('ما لقينا صفحتك', 'يمكن الرابط قديم - تواصل مع Sufiya Glass للحصول على رابط محدّث.');
   } else if(status === 401 || err === 'invalid-token'){
-    showError('الرابط غير صالح', 'هالرابط مش صحيح - تواصل مع Merzona للحصول على رابطك الصحيح.');
+    showError('الرابط غير صالح', 'هالرابط مش صحيح - تواصل مع Sufiya Glass للحصول على رابطك الصحيح.');
   } else if(status === 429 || err === 'rate-limit'){
     showError('محاولات كتيرة بوقت قصير', 'جرب تفتح الصفحة كمان مرة بعد شوي.');
   } else if(status === 503 || err === 'not-linked-yet'){
-    showError('الصفحة مش جاهزة بعد', 'تواصل مع Merzona.');
+    showError('الصفحة مش جاهزة بعد', 'تواصل مع Sufiya Glass.');
   } else {
-    showError('صار خطأ غير متوقع', 'جرب تفتح الصفحة كمان مرة، وإذا استمرت المشكلة تواصل مع Merzona.');
+    showError('صار خطأ غير متوقع', 'جرب تفتح الصفحة كمان مرة، وإذا استمرت المشكلة تواصل مع Sufiya Glass.');
   }
 }
 
